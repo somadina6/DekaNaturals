@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Deka Naturals</title>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        {% include 'styles.html' %}
+    </head>
+
+    <body>
+        <header class="top-header">
+            
+            <!-- Including my nav bar here -->
+            {% include 'nav.html'%}
+            <a class="nav-link" href="">My Account</a>
+            
+        </header>
+
+        {% block content %}
+        <!-- content goes here -->
+        {% endblock %}
+    </body>
+</html>
