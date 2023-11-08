@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <title>Deka Naturals</title>
-        <meta charset="UTF-8">
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        {% include 'styles.html' %}
-    </head>
+<html lang="en">
+  <head>
+    <title>Deka Naturals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include 'styles.html' %}
+  </head>
 
-    <body>
-        <header class="top-header">
-            
-            <!-- Including my nav bar here -->
-            {% include 'nav.html'%}
-            <a class="nav-link" href="">My Account</a>
-            
-        </header>
-        <section>
-            
-        </section>
+  <body>
+    <header class="top-header">
+      <nav>
+        <a class="nav-link" href="{% url 'products' %}">PRODUCTS</a>
+        <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
+        <a class="nav-link" href="{% url 'appointments' %}">APPOINTMENTS</a>
+        <a class="nav-link" href="{% url 'about-us' %}">ABOUT US</a>
+        <a class="nav-link" href="">CONTACT US</a>
+      </nav>
+      <!-- Including my nav bar here -->
+      <!-- {% include 'nav.html'%} -->
+      {% load static %}
+      <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo" />
+    </header>
+    <section id="banner"><div class="img-container">
+      <img class="banner-img" src="{% static '/home page image 1.jpg' %}" />
+        <div>
+    </section>
 
-        {% block content %}
-        <!-- content goes here -->
-        {% endblock %}
-    </body>
+    {% block content %}
+    <!-- content goes here -->
+    {% endblock %}
+  </body>
 </html>
