@@ -19,11 +19,18 @@
       <!-- Including my nav bar here -->
       <!-- {% include 'nav.html'%} -->
       {% load static %}
-      <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo" />
+      <a href="{% url 'home' %}" target="_parent">
+      <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo" /></a>
     </header>
-    <section id="banner"><div class="img-container">
-      <img class="banner-img" src="{% static '/home page image 1.jpg' %}" />
-        <div>
+    <section id="banner">
+        <div class="img-container">
+            <img class="banner-img" src="{% static '/home page image 1.jpg' %}" />
+        </div>
+        <div class="banner-texts">
+            <h1>Rooted In Nature, Thriving For Wellness</h1>
+            <p>Deka Herbs, Where Healing Begins Naturally</p>
+            <a href="{% url 'about-us' %}" target="_blank">Learn More</a> 
+        </div>
     </section>
 
     {% block content %}
