@@ -20,17 +20,45 @@
       <!-- {% include 'nav.html'%} -->
       {% load static %}
       <a href="{% url 'home' %}" target="_parent">
-      <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo" /></a>
+        <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo"
+      /></a>
     </header>
+    <!-- Banner Image Details-->
     <section id="banner">
-        <div class="img-container">
-            <img class="banner-img" src="{% static '/home page image 1.jpg' %}" />
+      <div class="img-container">
+        <img class="banner-img" src="{% static '/home page image 1.jpg' %}" />
+      </div>
+      <div class="banner-texts">
+        <h1>Rooted In Nature, Thriving For Wellness</h1>
+        <p>Deka Herbs, Where Healing Begins Naturally</p>
+        <a class="button-style" href="{% url 'about-us' %}">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Banner2 Details-->
+    <div class="banner2">
+      <div class="banner2box">
+        <h1>From Earth to Health: Embrace Herbal healing</h1>
+        <p>Discover the Power of Herbal Remedies</p>
+        <a
+          id="appointment-button"
+          href="{% url 'appointments' %}"
+          class="button-style"
+        >
+          Schedule An Appointment
+        </a>
+      </div>
+    </div>
+
+    <!--Secton Details #3-->
+    <section id="benefits-section">
+      <h1>Explore Nature Benefit</h1>
+      <div class="benefits-container">
+        <img src="{% statis '/herbal tea 2.jpg' %}" />
+        <div class="'benefits-text-box">
+          <h1>Therapeutic Herbal Teas</h1>
         </div>
-        <div class="banner-texts">
-            <h1>Rooted In Nature, Thriving For Wellness</h1>
-            <p>Deka Herbs, Where Healing Begins Naturally</p>
-            <a href="{% url 'about-us' %}" target="_blank">Learn More</a> 
-        </div>
+      </div>
     </section>
 
     {% block content %}
