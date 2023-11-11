@@ -52,20 +52,28 @@
 
     <!--Secton Details #3-->
     <section id="benefits-section">
-      <h1 style="text-align: center;">Explore Nature Benefit</h1>
+      <h1 style="text-align: center">Explore Nature Benefit</h1>
       <div class="benefits-container">
         <div class="img2-container">
-            <img src="{% static '/herbal tea 2.jpg' %}" />
+          <img src="{% static '/herbal tea 2.jpg' %}" />
         </div>
-        <div class="'benefits-text-box">
+        <div class="benefits-text-box">
           <h1>Therapeutic Herbal Teas</h1>
           <p>
-            Indulge in the tranquility of our therapeutic herbal tea, a blend carefully crafted to soothe both body and mind. Our teas are designed to promote a sense of calm and aid in digestion, making it an ideal companion for moments of self-care. Elevate your well-being with the natural goodness of our therapeutic herbal tea.
+            Indulge in the tranquility of our therapeutic herbal tea, a blend
+            carefully crafted to soothe both body and mind. Our teas are
+            designed to promote a sense of calm and aid in digestion, making it
+            an ideal companion for moments of self-care. Elevate your well-being
+            with the natural goodness of our therapeutic herbal tea.
           </p>
-          
+          <a class="button-style" href="{% url 'products' %}">Learn More</a>
         </div>
       </div>
     </section>
+
+    <footer>
+      <address><p>Ada-George</p></address>
+    </footer>
 
     {% block content %}
     <!-- content goes here -->
