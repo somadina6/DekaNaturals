@@ -118,7 +118,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'deka_naturals_project' / "static",   #updated static files dir
+    # BASE_DIR / 'deka_naturals_project' / "static",   #updated static files dir
     
 
 ]
