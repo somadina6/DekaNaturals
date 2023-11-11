@@ -8,6 +8,8 @@
   </head>
 
   <body>
+    {% load static %}
+    <!--Header Container-->
     <header class="top-header">
       <nav>
         <a class="nav-link" href="{% url 'products' %}">PRODUCTS</a>
@@ -23,10 +25,15 @@
         <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo"
       /></a>
     </header>
+
     <!-- Banner Image Details-->
     <section id="banner">
       <div class="img-container">
-        <img class="banner-img" src="{% static '/home page image 1.jpg' %}" alt="herbal picture"/>
+        <img
+          class="banner-img"
+          src="{% static '/home page image 1.jpg' %}"
+          alt="herbal picture"
+        />
       </div>
       <div class="banner-texts">
         <h1>Rooted In Nature, Thriving For Wellness</h1>
@@ -37,7 +44,6 @@
 
     <!-- Banner2 Details-->
     <div class="banner2">
-
       <div class="banner2box">
         <h1>From Earth to Health: Embrace Herbal Healing</h1>
         <p>Discover the Power of Herbal Remedies</p>
