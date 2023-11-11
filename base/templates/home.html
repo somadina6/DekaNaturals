@@ -1,89 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Deka Naturals</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% include 'styles.html' %}
-  </head>
+{% extends 'main.html' %} {% block content %}
 
-  <body>
+<!-- Banner Image Detailss-->
+<section id="banner">
+  <div class="img-container">
     {% load static %}
-    <!--Header Container-->
-    <header class="top-header">
-      <nav>
-        <a class="nav-link" href="{% url 'products' %}">PRODUCTS</a>
-        <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
-        <a class="nav-link" href="{% url 'appointments' %}">APPOINTMENTS</a>
-        <a class="nav-link" href="{% url 'about-us' %}">ABOUT US</a>
-        <a class="nav-link" href="">CONTACT US</a>
-      </nav>
-      <!-- Including my nav bar here -->
-      <!-- {% include 'nav.html'%} -->
-      {% load static %}
-      <a href="{% url 'home' %}" target="_parent">
-        <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo"
-      /></a>
-    </header>
+    <img
+      class="banner-img"
+      src="{% static '/home page image 1.jpg' %}"
+      alt="herbal picture"
+    />
+  </div>
+  <div class="banner-texts">
+    <h1>Rooted In Nature, Thriving For Wellness</h1>
+    <p>Deka Herbs, Where Healing Begins Naturally</p>
+    <a class="button-style" href="{% url 'about-us' %}">Learn More</a>
+  </div>
+</section>
 
-    <!-- Banner Image Details-->
-    <section id="banner">
-      <div class="img-container">
-        <img
-          class="banner-img"
-          src="{% static '/home page image 1.jpg' %}"
-          alt="herbal picture"
-        />
-      </div>
-      <div class="banner-texts">
-        <h1>Rooted In Nature, Thriving For Wellness</h1>
-        <p>Deka Herbs, Where Healing Begins Naturally</p>
-        <a class="button-style" href="{% url 'about-us' %}">Learn More</a>
-      </div>
-    </section>
+<!-- Banner2 Details-->
+<div class="banner2">
+  <div class="banner2box">
+    <h1>From Earth to Health: Embrace Herbal Healing</h1>
+    <p>Discover the Power of Herbal Remedies</p>
+    <a
+      id="appointment-button"
+      href="{% url 'appointments' %}"
+      class="button-style"
+    >
+      Schedule An Appointment
+    </a>
+  </div>
+</div>
 
-    <!-- Banner2 Details-->
-    <div class="banner2">
-      <div class="banner2box">
-        <h1>From Earth to Health: Embrace Herbal Healing</h1>
-        <p>Discover the Power of Herbal Remedies</p>
-        <a
-          id="appointment-button"
-          href="{% url 'appointments' %}"
-          class="button-style"
-        >
-          Schedule An Appointment
-        </a>
-      </div>
+<!--Secton Details #3-->
+<section id="benefits-section">
+  <h1 style="text-align: center">Explore Nature Benefit</h1>
+  <div class="benefits-container">
+    <div class="img2-container">
+      <img src="{% static '/herbal tea 2.jpg' %}" />
     </div>
+    <div class="benefits-text-box">
+      <h1>Therapeutic Herbal Teas</h1>
+      <p>
+        Indulge in the tranquility of our therapeutic herbal tea, a blend
+        carefully crafted to soothe both body and mind. Our teas are designed to
+        promote a sense of calm and aid in digestion, making it an ideal
+        companion for moments of self-care. Elevate your well-being with the
+        natural goodness of our therapeutic herbal tea.
+      </p>
+      <a class="button-style" href="{% url 'products' %}">Learn More</a>
+    </div>
+  </div>
+</section>
 
-    <!--Secton Details #3-->
-    <section id="benefits-section">
-      <h1 style="text-align: center">Explore Nature Benefit</h1>
-      <div class="benefits-container">
-        <div class="img2-container">
-          <img src="{% static '/herbal tea 2.jpg' %}" />
-        </div>
-        <div class="benefits-text-box">
-          <h1>Therapeutic Herbal Teas</h1>
-          <p>
-            Indulge in the tranquility of our therapeutic herbal tea, a blend
-            carefully crafted to soothe both body and mind. Our teas are
-            designed to promote a sense of calm and aid in digestion, making it
-            an ideal companion for moments of self-care. Elevate your well-being
-            with the natural goodness of our therapeutic herbal tea.
-          </p>
-          <a class="button-style" href="{% url 'products' %}">Learn More</a>
-        </div>
-      </div>
-    </section>
+<footer>
+  <address><p>Ada-George</p></address>
+</footer>
 
-    <footer>
-      <address><p>Ada-George</p></address>
-    </footer>
-
-    {% block content %}
-    <!-- content goes here -->
-    {% endblock %}
-  </body>
-</html>
+{% endblock content %}

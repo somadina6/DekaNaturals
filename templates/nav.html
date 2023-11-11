@@ -1,0 +1,13 @@
+<header class="top-header">
+  <nav>
+    <a class="nav-link" href="{% url 'products' %}">PRODUCTS</a>
+    <a class="nav-link" href="{% url 'services' %}">SERVICES</a>
+    <a class="nav-link" href="{% url 'appointments' %}">APPOINTMENTS</a>
+    <a class="nav-link" href="{% url 'about-us' %}">ABOUT US</a>
+    <a class="nav-link" href="">CONTACT US</a>
+  </nav>
+  {% load static %}
+  <a href="{% url 'home' %}" target="_parent">
+    <img class="logo-img" src="{% static '/logo.png' %}" alt="deka logo"
+  /></a>
+</header>

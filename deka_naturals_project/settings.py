@@ -118,10 +118,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    # BASE_DIR / 'deka_naturals_project' / "static",   #updated static files dir
     
-
 ]
+     
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
