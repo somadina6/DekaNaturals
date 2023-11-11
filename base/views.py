@@ -18,4 +18,7 @@ def about_us(request):
     return HttpResponse('about_us Page')
 
 def appointments(request):
-    return HttpResponse('appointments Page')        
+    return render(request,'appointments.html')     
+
+def contact_us(request):
+    return render(request,'contact.html')          

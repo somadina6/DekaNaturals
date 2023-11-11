@@ -1,0 +1,50 @@
+{% extends 'main.html' %} {% block content %}
+<div class="banner2">
+  <div class="banner2box">
+    <h1>From Earth to Health: Embrace Herbal Healing</h1>
+    <p>Discover the Power of Herbal Remedies</p>
+    <a
+      id="appointment-button"
+      href="{% url 'appointments' %}"
+      class="button-style"
+    >
+      Schedule An Appointment
+    </a>
+  </div>
+</div>
+
+<div class="address-div">
+  <h1
+    style="
+      text-align: center;
+      border-bottom: 2px solid grey;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-bottom: 5px;
+    "
+  >
+    Store Information
+  </h1>
+  <address>
+    <ul>
+      <li>
+        <p>Location:</p>
+        <p>9B Location Road Mgbouba, Ada-George, Port-Harcourt, rivers</p>
+      </li>
+      <li>
+        <p>Store Hours:</p>
+        <p>Monday-Friday</p>
+        <p>9:00am to 5:00pm</p>
+      </li>
+      <li>
+        <p>Email Us:</p>
+        <a href="mailto:njideka300@gmail.com">njideka300@gmail.com</a>
+      </li>
+      <li>
+        <p>Call Us:</p>
+        <a href="tel:+2348037079787">08037079787</a>
+      </li>
+    </ul>
+  </address>
+</div>
+
+{% endblock content %}

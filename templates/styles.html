@@ -16,7 +16,7 @@
     color: #1e1e1e;
     text-decoration: none;
     font-family: Helvetica Neue;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-top: 15px;
     margin-bottom: 0;
     padding-bottom: 2px;
@@ -37,6 +37,12 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 50px 0 50px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding-bottom: 25px;
+    /* border-bottom: 2px solid red; */
   }
 
   .logo-img {
@@ -47,7 +53,7 @@
 
   #banner {
     display: flex;
-    margin: 32px auto 0 auto;
+    margin: 2px auto 0 auto;
     width: 100%;
     height: var(--banner-height);
     justify-content: center;
@@ -165,4 +171,60 @@
     margin: 10px 40px 70px 40px;
   }
   /* jll */
+
+  .help-section {
+    margin: 50px auto 30px auto;
+    width: 90%;
+    height: 110px;
+    font-family: Helvetica Nueue;
+    text-align: center;
+    color: #6dbe45;
+  }
+
+  .help-section h1 {
+    font-size: 24px;
+  }
+
+  .help-container {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: -10px auto;
+    /* min-width: 200px; */
+    /* border: 1px solid red; */
+  }
+
+  .help-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #6dbe45;
+    border: 2px solid #6dbe45;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 120px;
+    align-self: center;
+    padding: 5px 10px;
+  }
+
+  .help-link:hover {
+    background-color: #6dbe45;
+    color: #fff;
+  }
+
+  .address-div {
+    background: #fff;
+    width: 60%;
+    margin: 5px auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  address ul li p:first-of-type {
+    font-weight: bold;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
 </style>
