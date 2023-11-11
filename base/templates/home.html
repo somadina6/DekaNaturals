@@ -1,0 +1,66 @@
+{% extends 'main.html' %} {% block content %}
+
+<!-- Banner Image Detailss-->
+<section id="banner">
+  <div class="img-container">
+    {% load static %}
+    <img
+      class="banner-img"
+      src="{% static '/home page image 1.jpg' %}"
+      alt="herbal picture"
+    />
+  </div>
+  <div class="banner-texts">
+    <h1>Rooted In Nature, Thriving For Wellness</h1>
+    <p>Deka Herbs, Where Healing Begins Naturally</p>
+    <a class="button-style" href="{% url 'about-us' %}">Learn More</a>
+  </div>
+</section>
+
+<!-- Banner2 Details-->
+<div class="banner2">
+  <div class="banner2box">
+    <h1>From Earth to Health: Embrace Herbal Healing</h1>
+    <p>Discover the Power of Herbal Remedies</p>
+    <a
+      id="appointment-button"
+      href="{% url 'appointments' %}"
+      class="button-style"
+    >
+      Schedule An Appointment
+    </a>
+  </div>
+</div>
+
+<!--Secton Details #3-->
+<section id="benefits-section">
+  <h1 style="text-align: center">Explore Nature Benefit</h1>
+  <div class="benefits-container">
+    <div class="img2-container">
+      <img src="{% static '/herbal tea 2.jpg' %}" />
+    </div>
+    <div class="benefits-text-box">
+      <h1>Therapeutic Herbal Teas</h1>
+      <p>
+        Indulge in the tranquility of our therapeutic herbal tea, a blend
+        carefully crafted to soothe both body and mind. Our teas are designed to
+        promote a sense of calm and aid in digestion, making it an ideal
+        companion for moments of self-care. Elevate your well-being with the
+        natural goodness of our therapeutic herbal tea.
+      </p>
+      <a class="button-style" href="{% url 'products' %}">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<!--How can We Help Section-->
+<div class="help-section">
+  <h1>How Can We Help?</h1>
+  <div class="help-container">
+    <a class="help-link" href="{% url 'appointments' %}">Micro Nutrients</a>
+    <a class="help-link" href="{% url 'appointments' %}">Multivitamins</a>
+    <a class="help-link" href="{% url 'appointments' %}">Stem Cells</a>
+  </div>
+</div>
+
+{% endblock content %}
