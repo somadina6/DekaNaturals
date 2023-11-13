@@ -40,12 +40,16 @@
         <label for="phone">Phone Number:</label>
         <input
           id="phone"
-          type="number"
+          type="tel"
           required
+          aria-multiline="false"
           class="input-field"
           placeholder="Enter your phone number"
           name="phone"
+          minlength="11"
+          pattern="0+[0-9]{10}"
         />
+        <!-- <small>08012345678</small> -->
       </div>
 
       <div class="label-container">
