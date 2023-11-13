@@ -1,63 +1,67 @@
 {% extends 'main.html' %} {% block content %}
 
-<h1 style="color: #000; text-align: center">Schedule An Appointment</h1>
+<div class="apt-body">
+  <h1 class="appointment-h1">Schedule An Appointment</h1>
 
-<form method="post" id="form">
-  {% csrf_token %}
-  <div class="label-container">
-    <label for="fname">First Name:</label>
-    <input
-      type="text"
-      size="20"
-      maxlength="20"
-      minlength="5"
-      required
-      id="fname"
-      name="fname"
-      class="input-field"
-      placeholder="First Name"
-    />
-  </div>
+  <form method="post" id="form">
+    {% csrf_token %}
+    <div class="t">
+      <div class="label-container">
+        <label for="fname">First Name:</label>
+        <input
+          type="text"
+          size="20"
+          maxlength="20"
+          minlength="5"
+          required
+          id="fname"
+          name="fname"
+          class="input-field"
+          placeholder="First Name"
+        />
+      </div>
 
-  <div class="label-container">
-    <label for="lname">Last Name:</label>
-    <input
-      type="text"
-      size="20"
-      maxlength="20"
-      minlength="5"
-      required
-      id="lname"
-      name="lname"
-      class="input-field"
-      placeholder="Last Name"
-    />
-  </div>
+      <div class="label-container">
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          size="20"
+          maxlength="20"
+          minlength="5"
+          required
+          id="lname"
+          name="lname"
+          class="input-field"
+          placeholder="Last Name"
+        />
+      </div>
 
-  <div class="label-container">
-    <label for="phone">Phone Number:</label>
-    <input
-      id="phone"
-      type="number"
-      required
-      class="input-field"
-      placeholder="Enter your phone number"
-      name="phone"
-    />
-  </div>
+      <div class="label-container">
+        <label for="phone">Phone Number:</label>
+        <input
+          id="phone"
+          type="number"
+          required
+          class="input-field"
+          placeholder="Enter your phone number"
+          name="phone"
+        />
+      </div>
 
-  <div class="label-container">
-    <label for="email">Email:</label>
-    <input
-      id="email"
-      class="input-field"
-      type="email"
-      placeholder="Enter your email address"
-      name="email"
-    />
-  </div>
+      <div class="label-container">
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          class="input-field"
+          type="email"
+          placeholder="Enter your email address"
+          name="email"
+        />
+      </div>
+    </div>
 
-  <input type="submit" value="Submit" />
-</form>
+    <input type="submit" value="Submit" />
+  </form>
+</div>
 
 {% endblock content %}
