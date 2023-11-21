@@ -12,7 +12,7 @@ def services(request):
     return HttpResponse('Services Page')
 
 def products(request):
-    return HttpResponse('Products Page')
+    return render(request, 'products.html')
 
 def about_us(request):
     return HttpResponse('about_us Page')
