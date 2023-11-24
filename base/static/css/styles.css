@@ -1,0 +1,378 @@
+:root {
+  --banner-height: 400px;
+  --font1: Helvetica Neue, Regular;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Header Section */
+.nav-link {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-family: Helvetica Neue;
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-bottom: 2px;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-link:hover {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #8b5a2b;
+}
+nav {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px 0 50px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+  padding-bottom: 25px;
+  /* border-bottom: 2px solid red; */
+}
+
+.logo-img {
+  width: 130px;
+  position: absolute;
+  right: 50px;
+}
+
+#banner {
+  display: flex;
+  margin: 2px auto 0 auto;
+  width: 100%;
+  height: var(--banner-height);
+  justify-content: center;
+  padding: 0;
+}
+
+.img-container {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-texts {
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-content: space-between;
+  position: absolute;
+  color: white;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  top: 100px;
+  place-items: center;
+  margin-top: calc((var(--banner-height) / 5));
+}
+.banner-texts * {
+  margin: 0;
+}
+
+.button-style {
+  text-decoration: none;
+  color: #fff;
+  background: #3f9a80 0% 0% no-repeat padding-box;
+  /* border: 1px solid #AECDCD; */
+  border-radius: 30px;
+  opacity: 1;
+  padding: 8px 36px;
+  font-family: Helvetica Neue;
+  align-self: center;
+  transition: ease-out 0.2s;
+}
+
+.button-style:hover {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.banner2 {
+  width: 100%;
+  height: 200px;
+  background-color: #6dbe45;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.banner2box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.banner2box * {
+  margin: 0;
+}
+
+#benefits-section {
+  width: 80%;
+  height: 400px;
+  margin: 1px auto;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+}
+
+.benefits-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  column-gap: 20px;
+  box-shadow: 2px 2px #00000029, -2px -2px #00000029;
+  border: 1px solid #00000029;
+  border-radius: 2px;
+  font-family: Helvetica Neue;
+}
+
+.benefits-container img {
+  width: 100%;
+  height: auto;
+}
+
+.img2-container {
+  max-width: 35%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.benefits-text-box {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#benefits-section h1 {
+  color: #6dbe45;
+}
+
+.benefits-text-box p {
+  text-align: left;
+  margin: 10px 40px 70px 40px;
+}
+/* jll */
+
+.help-section {
+  margin: 50px auto 30px auto;
+  width: 90%;
+  height: 110px;
+  font-family: Helvetica Nueue;
+  text-align: center;
+  color: #6dbe45;
+}
+
+.help-section h1 {
+  font-size: 24px;
+}
+
+.help-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 40px;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: -10px auto;
+
+  /* min-width: 200px; */
+  /* border: 1px solid red; */
+}
+
+.help-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #6dbe45;
+  border: 2px solid #6dbe45;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 120px;
+  align-self: center;
+  padding: 5px 10px;
+  transition: width 0.5s;
+  column-gap: 3px;
+}
+
+.help-link:hover {
+  background-color: #6dbe45;
+  color: #fff;
+}
+
+.address-div {
+  background: #fff;
+  width: 60%;
+  margin: 5px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+address ul li p:first-of-type {
+  font-weight: bold;
+}
+
+address ul li a {
+  text-decoration: none;
+  color: black;
+  background-color: #aecdcd;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Footer Section */
+
+footer {
+  width: 100vw;
+  padding: 10px;
+  background-color: #aecdcd;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footer-img {
+  display: block;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.input-field {
+  margin-top: 5px;
+  display: block;
+  width: 250px;
+}
+
+#textarea {
+  margin-top: 5px;
+  display: block;
+}
+
+.label-container label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.label-container {
+  margin-bottom: 20px;
+}
+
+.apt-body {
+  margin-top: 20px;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(#fff, rgba(86, 168, 119, 0.2), #fff);
+}
+
+.appointment-h1 {
+  color: #6dbe45;
+  text-align: center;
+  margin: 30px auto;
+  border-bottom: 1px solid gray;
+  width: 600px;
+  padding-bottom: 8px;
+}
+
+.t {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  column-gap: 40px;
+}
+
+form {
+  width: 610px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+form input[type="submit"] {
+  display: block;
+  border: 2px solid #3f9a80;
+  margin: 10px auto;
+  width: 150px;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #3f9a80;
+  color: aliceblue;
+  transition: width 0.5s;
+  margin-top: -10px;
+  /* transition: ease-out 0.2s; */
+}
+
+form input[type="submit"]:hover {
+  width: 160px;
+  background-color: green;
+  cursor: pointer;
+}
+
+/* Product Page */
+
+.product-body {
+  width: 100%;
+  height: 100%;
+}
+
+.product-body * {
+  box-sizing: border-box;
+}
+.product-nav {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid gray;
+  padding-left: 6px;
+}
+
+.products-container {
+  margin-left: 200px;
+}
+
+.products-container h1 {
+  color: #6dbe45;
+  text-align: center;
+}
+
+.product-box {
+  width: 90%;
+  height: 250px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px auto;
+  overflow: hidden;
+  font-family: var(--font1);
+}
+.img-div {
+  width: 250px;
+  height: 100%;
+  overflow: hidden;
+  padding: 7px;
+}
+
+.product-box img {
+  width: 100%;
+  height: 100%;
+}
