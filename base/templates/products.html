@@ -1,0 +1,26 @@
+{% extends 'main.html' %} {% block content %}
+<!-- Start -->
+<section class="product-body">
+  <!-- Side Bar -->
+  <div class="product-nav">
+    <h2>Categories:</h2>
+  </div>
+
+  <!--Start of Product Listing-->
+  <div class="products-container">
+    <h1>Multivitamins and Supplements</h1>
+
+    <!--First Level-->
+    <div class="product-box">
+      <!--Load Static - Image-->
+      {% load static %}
+      <div class="img-div">
+        <img src="{% static '/herbal tea 2.jpg' %}" />
+      </div>
+      <div class="text-container">
+        <h2></h2>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
