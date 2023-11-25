@@ -1,7 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from . import models
 
 # Create your views here.
+
+
 
 
 
@@ -9,10 +12,12 @@ def home(request):
     return render(request,"home.html")
 
 def services(request):
-    return HttpResponse('Services Page')
+    return HttpResponse(products_context)
 
 def products(request):
-    return render(request, 'products.html')
+    products = models.Multivitamins.objects.values()
+    context = {'products': products}
+    return render(request, 'products.html', context)
 
 def about_us(request):
     return HttpResponse('about_us Page')
