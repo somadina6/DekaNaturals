@@ -12,7 +12,7 @@ def home(request):
     return render(request,"home.html")
 
 def services(request):
-    return HttpResponse(products_context)
+    return HttpResponse('services page')
 
 def products(request):
     products = models.Multivitamins.objects.values()
