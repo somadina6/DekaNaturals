@@ -16,7 +16,9 @@ def services(request):
 
 def products(request):
     products = models.Multivitamins.objects.values()
-    context = {'products': products}
+    categories = models.Categories.objects.values()
+    context = {'products': products,
+               'categories': categories}
     return render(request, 'products.html', context)
 
 def about_us(request):

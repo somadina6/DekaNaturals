@@ -4,6 +4,11 @@
   <!-- Side Bar -->
   <div class="product-nav">
     <h2>Categories:</h2>
+    <div class="category-div">
+      {% for category in categories %}
+      <p>{{category.name}}</p>
+      {% endfor %}
+    </div>
   </div>
 
   <!--Start of Product Listing-->
@@ -22,7 +27,7 @@
       <div class="text-container">
         <h2>{{product.name}}</h2>
         <p>{{product.description}}</p>
-        <a class="button-style">Contact Us</a>
+        <a href="{% url 'contact-us' %}" class="button-style">Contact Us</a>
       </div>
     </div>
 
