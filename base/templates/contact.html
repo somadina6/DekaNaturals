@@ -14,7 +14,7 @@
 </div>
 
 <div class="address-div">
-  <h1
+  <!-- <h1
     style="
       text-align: center;
       border-bottom: 2px solid grey;
@@ -23,8 +23,10 @@
     "
   >
     Store Information
-  </h1>
+  </h1> -->
+  <h2 id="welcome-text">We look forward to welcoming you.</h2>
   <address>
+    <p id="address-title">Deka Naturals Store Location:</p>
     <ul>
       <li>
         <p>Location:</p>
@@ -45,6 +47,13 @@
       </li>
     </ul>
   </address>
+  <a
+    id="address-appointment-button"
+    href="{% url 'appointments' %}"
+    class="button-style center"
+  >
+    Schedule An Appointment
+  </a>
 </div>
 
 {% endblock content %}
