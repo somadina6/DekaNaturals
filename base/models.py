@@ -16,6 +16,11 @@ class Categories(models.Model):
         return self.name
 
 class Multivitamins(models.Model):
+    id = models.IntegerField(
+        blank=True,
+        default=1
+    )
+    
     name = models.CharField(
         max_length=30, 
         blank=False, 
@@ -26,6 +31,8 @@ class Multivitamins(models.Model):
     #     null=True,
     #     on_delete=models.CASCADE
     #     )
+
+    
 
 
     def __str__(self):
