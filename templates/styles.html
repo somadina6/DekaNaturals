@@ -219,7 +219,7 @@
     color: #fff;
   }
 
-  /* Contact Page */
+  /*------------- Contact Page --------------------*/
 
   .address-div {
     background: #fff;
@@ -233,8 +233,17 @@
     margin-bottom: 50px;
   }
 
+  address ul {
+    margin-left: -20px;
+  }
+
+  address li {
+    list-style: none;
+  }
+
   address ul li p:first-of-type {
     font-weight: bold;
+    color: black;
   }
 
   address ul li a {
@@ -270,13 +279,12 @@
     text-align: center;
   }
 
-  /* Footer Section Starts */
+  /*-------------- Footer Section Starts -----------------*/
 
   footer {
     width: 100vw;
     padding: 10px;
     background-color: #aecdcd;
-    position: fixed;
     left: 0;
     bottom: 0;
   }
@@ -373,9 +381,8 @@
   }
   .product-nav {
     width: var(--navwidth);
-    height: 100vh;
+    height: 100%;
     position: fixed;
-    border-right: 1px solid gray;
     padding-left: 6px;
   }
 
@@ -390,6 +397,7 @@
 
   .products-container {
     margin-left: var(--navwidth);
+    border-left: 1px solid gray;
   }
 
   .products-container h1 {
