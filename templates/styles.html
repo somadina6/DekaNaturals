@@ -401,12 +401,18 @@
     width: 90%;
     height: 250px;
     background-color: #fff;
-    border: 1px solid black;
+    /* border: 1px solid grey; */
     border-radius: 10px;
     margin: 5px auto 20px auto;
     display: flex;
-
+    box-shadow: 0px 3px 10px #00000029;
     font-family: var(--font1);
+    transition: width 0.5s;
+  }
+
+  .product-box:hover {
+    width: 88%;
+    border: 0.3px solid grey;
   }
   .img-div {
     /* Product Image Div */
@@ -423,6 +429,7 @@
 
   .text-container {
     width: calc(100% - 250px);
+    height: calc(100% - 70px);
     text-align: center;
     padding-right: 20px;
     margin: 5px auto 7px auto;
