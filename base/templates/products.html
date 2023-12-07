@@ -3,17 +3,18 @@
 <section class="product-body">
   <!-- Side Bar -->
   <div class="product-nav">
-    <h2>Categories:</h2>
+    <h2 class="green-title">Categories</h2>
     <div class="category-div">
       {% for category in categories %}
       <p>{{category.name}}</p>
       {% endfor %}
     </div>
   </div>
+  <!-- End Of Side Bar -->
 
   <!--Start of Product Listing-->
   <div class="products-container">
-    <h1>Multivitamins and Supplements</h1>
+    <h1 class="green-title">Multivitamins and Supplements</h1>
 
     <!--First Level-->
     {% for product in products %}
@@ -32,6 +33,21 @@
     </div>
 
     {% endfor %}
+
+    <div id="notice-container">
+      <h4>Notice To Our Clients</h4>
+      <p>
+        At Deka Naturals, your well-being is our priority. Please contact us for
+        personalized consultations tailored to your health needs.
+      </p>
+
+      <p>
+        Our team of experts will guide you through our range of premium
+        multivitamins and supplements, ensuring you make informed choices for a
+        healthier lifestyle.
+      </p>
+      <a href="{% url 'contact-us' %}" class="button-style">Contact Us</a>
+    </div>
   </div>
 </section>
 
